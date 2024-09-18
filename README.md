@@ -1,7 +1,7 @@
 # **Operating Permit Data Analytical Platform**
 Dataset: Operating Permit Data
 
-**Operating Permit Data URL:** [[Insert dataset URL here if available](https://opendata.vancouver.ca/explore/dataset/operating-permits-water-systems-water-quality-reports/information/)]
+**Operating Permit Data URL:** [(https://opendata.vancouver.ca/explore/dataset/operating-permits-water-systems-water-quality-reports/information/)]
 
 ---
 
