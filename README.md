@@ -81,12 +81,7 @@ Key tasks:
   - **Permit Status Distribution:** A bar chart was created to display the number of "Issued" vs "Active" permits.
 
     ![Data Analysis](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Analysis.png)
-  
-  - **Geographic Heatmap:** A heatmap representing the concentration of mechanical systems across Vancouver.
-    *(Add link to this image once you upload it)*
 
-  - **Time Series Analysis:** A time series chart to track permit reporting over time.
-    *(Add link to this image once you upload it)*
 
 ---
 
@@ -96,6 +91,8 @@ Key tasks:
 
 ![Data Publishing](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Publishing.jpg)
 
+![Data Publishing](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Publishing%202.png)
+
 ---
 
 ### 7: Data Protection
@@ -104,12 +101,16 @@ Key tasks:
 
 ![Data Protection](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Protection%201.png)
 
+![Data Protection](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Protection%202.png)
+
 ---
 
 ### 8: Data Monitoring
 **Monitoring Tools:** AWS CloudWatch (if used) to enable real-time monitoring of the dataset and track any changes in system status or permits.
 
 ![Data Monitoring](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Monitoring.png)
+
+![Data Monitoring](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Monitoring%202.png)
 
 ---
 
