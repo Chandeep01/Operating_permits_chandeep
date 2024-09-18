@@ -8,6 +8,8 @@ Dataset: Operating Permit Data
 ## **Objectives:**
 The Operating Permit Data Analytical Platform project is designed to analyze mechanical system permits issued in Vancouver. The project aims to evaluate trends in system types, permit statuses, and geographic distribution of systems. We utilized data cleaning, transformation, and visualization techniques to address key analytical questions through descriptive, diagnostic, predictive, and prescriptive analysis.
 
+https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Analytical%20Question%20Formulation.png
+
 ---
 
 ## **Data Analytical Question Formulation:**
