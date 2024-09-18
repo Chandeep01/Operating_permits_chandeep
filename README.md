@@ -8,7 +8,7 @@ Dataset: Operating Permit Data
 ## **Objectives:**
 The Operating Permit Data Analytical Platform project is designed to analyze mechanical system permits issued in Vancouver. The project aims to evaluate trends in system types, permit statuses, and geographic distribution of systems. We utilized data cleaning, transformation, and visualization techniques to address key analytical questions through descriptive, diagnostic, predictive, and prescriptive analysis.
 
-https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Analytical%20Question%20Formulation.png
+![Data Analytical Question Formulation](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Analytical%20Question%20Formulation.png)
 
 ---
 
@@ -40,6 +40,8 @@ Key dataset variables include:
 - **Storage Method:** The dataset was stored in a structured Excel format.
 - **S3 Bucket (optional if used):** For scalable storage, the data could be stored in S3 buckets with folders for different reporting years.
 
+![Data Storage](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Storage.png)
+
 ---
 
 ### 2: Dataset Preparation
@@ -50,6 +52,8 @@ Key tasks:
 - Conversion of categorical fields (e.g., permit status) to numerical values for analysis.
 - Standardization of addresses and date formats for easier aggregation and analysis.
 
+![Data Cleaning](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Cleaning.png)
+
 ---
 
 ### 3: Data Ingestion, Storage, Pipeline Design, Cleaning, Pipeline Implementation
@@ -58,6 +62,8 @@ Key tasks:
 - **Schema Changes:** Address and date columns were formatted for consistency.
 - **Final Data Storage:** The cleaned dataset was saved in a structured format for easy querying and visualization.
 
+![Data Pipeline Implementation](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Pipeline%20Implementation.png)
+
 ---
 
 ### 4: Data Structuring
@@ -65,19 +71,22 @@ Key tasks:
 
 - Data was structured into SQL-based tables using Pandas for easy querying and further analysis.
 
+![Data Structuring](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Structuring.png)
+
 ---
 
 ### 5: Data Analysis and Visualization
 - **Visualization Tools:** Matplotlib and Seaborn were used for data visualization.
 - **Key Visualizations:**
   - **Permit Status Distribution:** A bar chart was created to display the number of "Issued" vs "Active" permits.
-    ![Permit Status Distribution](link-to-your-image)
+
+    ![Data Analysis](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Analysis.png)
   
   - **Geographic Heatmap:** A heatmap representing the concentration of mechanical systems across Vancouver.
-    ![Geographic Heatmap](link-to-your-image)
-  
+    *(Add link to this image once you upload it)*
+
   - **Time Series Analysis:** A time series chart to track permit reporting over time.
-    ![Time Series Analysis](link-to-your-image)
+    *(Add link to this image once you upload it)*
 
 ---
 
@@ -85,16 +94,22 @@ Key tasks:
 - **Server Setup:** EC2 (if used) was employed for setting up a general server to enable internal access to the analyzed data.
 - **Web Publishing:** A web server was set up using EC2 (if used) to allow external access to visualizations and reports.
 
+![Data Publishing](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Publishing.jpg)
+
 ---
 
 ### 7: Data Protection
 - **Encryption Tool:** AWS KMS (if used) can be implemented to ensure the dataset is encrypted and only accessible to authorized users.
 - **Versioning and Replication:** To avoid data loss and ensure availability, S3 versioning and cross-region replication can be employed.
 
+![Data Protection](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Protection%201.png)
+
 ---
 
 ### 8: Data Monitoring
 **Monitoring Tools:** AWS CloudWatch (if used) to enable real-time monitoring of the dataset and track any changes in system status or permits.
+
+![Data Monitoring](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Monitoring.png)
 
 ---
 
