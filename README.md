@@ -133,3 +133,9 @@ The ETL pipeline was executed with AWS Glue, and the processed data was stored i
 10. **Cross-Region Replication for data availability**
 
 These deliverables provide a framework for analyzing operating permit data, ensuring data is securely processed, stored, and published while maintaining accuracy and availability.
+
+---
+
+## **Conclusion:**
+
+This project successfully analyzed operating permits in Vancouver, revealing trends in system types, statuses, and geographic distribution. The insights can help improve permit management and ensure timely compliance, supporting better operational efficiency across the city.
