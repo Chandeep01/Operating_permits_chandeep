@@ -38,7 +38,7 @@ Key dataset variables include:
 
 ### 1: Data Storage Design
 - **Storage Method:** The dataset was stored in a structured Excel format.
-- **S3 Bucket (optional if used):** For scalable storage, the data could be stored in S3 buckets with folders for different reporting years.
+- **S3 Bucket:** For scalable storage, the data stored in S3 buckets with folders for different reporting years.
 
 ![Data Storage](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Storage.png)
 
@@ -49,25 +49,30 @@ Key dataset variables include:
 
 Key tasks:
 - Removal of duplicate rows (multiple entries for the same permit).
-- Conversion of categorical fields (e.g., permit status) to numerical values for analysis.
-- Standardization of addresses and date formats for easier aggregation and analysis.
+- Convert categorical fields (e.g., permit status) to numerical values for analysis.
 
 ![Data Cleaning](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Cleaning.png)
 
 ---
 
 ### 3: Data Ingestion, Storage, Pipeline Design, Cleaning, Pipeline Implementation
-- **Pipeline Design:** We designed a pipeline to import the Excel file, clean the data, and structure it for analysis.
-- **Data Cleaning:** The dataset was cleaned to remove duplicates, standardize entries, and ensure consistent formatting.
-- **Schema Changes:** Address and date columns were formatted for consistency.
-- **Final Data Storage:** The cleaned dataset was saved in a structured format for easy querying and visualization.
+
+AWS Glue ETL Job: Proptax-ETL-job
+Imported 2023 and 2024 datasets from the raw S3 folder.
+Adjusted schema, filtered out irrelevant data, and removed null values.
+Applied join and aggregate functions to merge datasets, focusing on Zoning Classification.
+AWS Glue's ETL process cleaned and transformed the data:
+
+The final cleaned dataset was saved in CSV format in the curated S3 folder.
+
+The ETL pipeline was executed with AWS Glue, and the processed data was stored in the curated S3 bucket folder.
 
 ![Data Pipeline Implementation](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Pipeline%20Implementation.png)
 
 ---
 
 ### 4: Data Structuring
-**Tool Used:** SQL-based table queries for data structuring.
+**Tool Used:** AWS Athena.
 
 - Data was structured into SQL-based tables using Athena for easy querying and further analysis.
 
@@ -77,7 +82,7 @@ Key tasks:
 
 ### 5: Data Analysis and Visualization
 
-- **Key Visualizations:** A bar chart was created to display the number of "Issued" vs "Active" permits.
+- **Key Visualizations:** A bar chart was created to display the number of "Issued" vs "Active" permits from AWS Athena in CSV format.
 
     ![Data Analysis](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Analysis.png)
 
@@ -85,8 +90,8 @@ Key tasks:
 ---
 
 ### 6: Data Protection
-- **Encryption Tool:** AWS KMS (if used) can be implemented to ensure the dataset is encrypted and only accessible to authorized users.
-- **Versioning and Replication:** To avoid data loss and ensure availability, S3 versioning and cross-region replication can be employed.
+- **Encryption Tool:** AWS KMS (Key Management Services)
+- **Versioning and Replication:** To avoid accidental data deletion and multiple region accessbility, S3 Versioning and Cross-Region Replication is enabled.
 
 ![Data Protection](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Protection%201.png)
 
@@ -95,7 +100,7 @@ Key tasks:
 ---
 
 ### 7: Data Monitoring
-**Monitoring Tools:** AWS CloudWatch (if used) to enable real-time monitoring of the dataset and track any changes in system status or permits.
+**Monitoring Tools:** AWS CloudWatch and AWS CloudTrail
 
 ![Data Monitoring](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Monitoring.png)
 
@@ -104,21 +109,28 @@ Key tasks:
 ---
 
 ## **Tools and Techniques:**
-- **Pandas** - For data cleaning and structuring.
-- **Matplotlib/Seaborn** - For data visualization.
-- **SQL** - For querying structured data.
-- **Excel** - For initial data handling (and visualization if applicable).
-- **AWS S3, EC2, KMS (Optional)** - If using cloud-based storage, processing, and security services.
+AWS S3 Bucket
+AWS Glue
+AWS Glue DataBrew
+AWS Athena
+AWS EC2
+AWS KMS (Key Management Services)
+AWS CloudWatch
+AWS CloudTrail
+
 
 ---
 
 ## **Deliverables:**
-1. **Data Analytical Questions and Discovery**
-2. **Data Storage Structure**
-3. **Cleaned Dataset**
-4. **Data Visualization (e.g., charts in Matplotlib/Seaborn)**
-5. **Data Published on Web Server (if applicable)**
-6. **Data Encryption for security (if applicable)**
-7. **Data Monitoring and Alerts (if applicable)**
+1. **Data Questions and Discovery**
+2. **S3 Storage Structure**
+3. **Cleaned Datasets for 2023 and 2024**
+4. **ETL Pipeline Design and Implementation (AWS Glue)**
+5. **Structured SQL Queries in AWS Athena**
+6. **Visualizations (Charts in MS Excel)**
+7. **Data Published on General and Web Servers (EC2 Instances)**
+8. **Data Protection (AWS KMS encryption)**
+9. **S3 Versioning for data history**
+10. **Cross-Region Replication for data availability**
 
 These deliverables provide a framework for analyzing operating permit data, ensuring data is securely processed, stored, and published while maintaining accuracy and availability.
