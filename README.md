@@ -76,7 +76,7 @@ The ETL pipeline was executed with AWS Glue, and the processed data was stored i
 
 - Data was structured into SQL-based tables using Athena for easy querying and further analysis.
 
-![Data Structuring](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Bar%20graph%20data%20Visualization.png)
+![Data Structuring](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Analysis.png)
 
 ---
 
