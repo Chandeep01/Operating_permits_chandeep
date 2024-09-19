@@ -41,6 +41,7 @@ Key dataset variables include:
 - **S3 Bucket:** For scalable storage, the data stored in S3 buckets with folders for different reporting years.
 
 ![Data Storage](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Storage.png)
+![Data Storage](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Storage%20Design.png)
 
 ---
 
@@ -57,13 +58,12 @@ Key tasks:
 
 ### 3: Data Ingestion, Storage, Pipeline Design, Cleaning, Pipeline Implementation
 
-AWS Glue ETL Job: Proptax-ETL-job
-Imported 2023 and 2024 datasets from the raw S3 folder.
-Adjusted schema, filtered out irrelevant data, and removed null values.
-Applied join and aggregate functions to merge datasets, focusing on Zoning Classification.
-AWS Glue's ETL process cleaned and transformed the data:
+**Tool Used:** AWS Glue.
 
-The final cleaned dataset was saved in CSV format in the curated S3 folder.
+- Imported 2023 and 2024 datasets from the raw S3 folder.
+- Adjusted schema, filtered out irrelevant data, and removed null values.
+- Applied join and aggregate functions to merge datasets, focusing on Zoning Classification.
+- The final cleaned dataset was saved in CSV format in the curated S3 folder.
 
 The ETL pipeline was executed with AWS Glue, and the processed data was stored in the curated S3 bucket folder.
 
