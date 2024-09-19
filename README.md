@@ -109,15 +109,14 @@ The ETL pipeline was executed with AWS Glue, and the processed data was stored i
 ---
 
 ## **Tools and Techniques:**
-AWS S3 Bucket
-AWS Glue
-AWS Glue DataBrew
-AWS Athena
-AWS EC2
-AWS KMS (Key Management Services)
-AWS CloudWatch
-AWS CloudTrail
-
+1. **AWS S3 Bucket**
+2. **AWS Glue**
+3. **AWS Glue DataBrew**
+4. **AWS Athena**
+5. **AWS EC2**
+6. **AWS KMS (Key Management Services)**
+7. **AWS CloudWatch**
+8. **AWS CloudTrail**
 
 ---
 
