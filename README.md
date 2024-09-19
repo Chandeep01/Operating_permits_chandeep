@@ -76,7 +76,7 @@ The ETL pipeline was executed with AWS Glue, and the processed data was stored i
 
 - Data was structured into SQL-based tables using Athena for easy querying and further analysis.
 
-![Data Structuring](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Structuring.png)
+![Data Structuring](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Bar%20graph%20data%20Visualization.png)
 
 ---
 
@@ -84,7 +84,7 @@ The ETL pipeline was executed with AWS Glue, and the processed data was stored i
 
 - **Key Visualizations:** A bar chart was created to display the number of "Issued" vs "Active" permits from AWS Athena in CSV format.
 
-    ![Data Analysis](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Analysis.png)
+    ![Data Analysis](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Bar%20graph%20data%20Visualization.png)
 
 
 ---
