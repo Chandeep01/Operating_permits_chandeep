@@ -45,7 +45,7 @@ Key dataset variables include:
 ---
 
 ### 2: Dataset Preparation
-**Tool Used:** Pandas for data manipulation and cleaning.
+**Tool Used:** Databrew for data manipulation and cleaning.
 
 Key tasks:
 - Removal of duplicate rows (multiple entries for the same permit).
@@ -67,35 +67,24 @@ Key tasks:
 ---
 
 ### 4: Data Structuring
-**Tool Used:** Pandas and SQL-based table queries for data structuring.
+**Tool Used:** SQL-based table queries for data structuring.
 
-- Data was structured into SQL-based tables using Pandas for easy querying and further analysis.
+- Data was structured into SQL-based tables using Athena for easy querying and further analysis.
 
 ![Data Structuring](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Structuring.png)
 
 ---
 
 ### 5: Data Analysis and Visualization
-- **Visualization Tools:** Matplotlib and Seaborn were used for data visualization.
-- **Key Visualizations:**
-  - **Permit Status Distribution:** A bar chart was created to display the number of "Issued" vs "Active" permits.
+
+- **Key Visualizations:** A bar chart was created to display the number of "Issued" vs "Active" permits.
 
     ![Data Analysis](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Analysis.png)
 
 
 ---
 
-### 6: Data Publishing
-- **Server Setup:** EC2 (if used) was employed for setting up a general server to enable internal access to the analyzed data.
-- **Web Publishing:** A web server was set up using EC2 (if used) to allow external access to visualizations and reports.
-
-![Data Publishing](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Publishing.jpg)
-
-![Data Publishing](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Publishing%202.png)
-
----
-
-### 7: Data Protection
+### 6: Data Protection
 - **Encryption Tool:** AWS KMS (if used) can be implemented to ensure the dataset is encrypted and only accessible to authorized users.
 - **Versioning and Replication:** To avoid data loss and ensure availability, S3 versioning and cross-region replication can be employed.
 
@@ -105,7 +94,7 @@ Key tasks:
 
 ---
 
-### 8: Data Monitoring
+### 7: Data Monitoring
 **Monitoring Tools:** AWS CloudWatch (if used) to enable real-time monitoring of the dataset and track any changes in system status or permits.
 
 ![Data Monitoring](https://github.com/Chandeep01/Operating_permits_chandeep/blob/main/Data%20Monitoring.png)
